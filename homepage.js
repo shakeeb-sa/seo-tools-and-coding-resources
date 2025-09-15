@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       id: "exploreCodingBtn",
-      url: "shakeeb-sa.github.io/all-about-coding/",
+      url: "https://shakeeb-sa.github.io/all-about-coding/",
     },
   ];
   buttons.forEach(({ id, url }) => {
@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
