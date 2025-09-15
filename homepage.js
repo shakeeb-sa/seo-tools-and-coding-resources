@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = [
     {
       id: "splitUrlBtn",
-      url: "https://hal9000dev-ai.github.io/url-path-separator/",
+      url: "https://shakeeb-sa.github.io/url-path-separator",
     },
     {
       id: "convertLinksBtn",
@@ -126,4 +126,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
