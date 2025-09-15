@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       id: "convertLinksBtn",
-      url: "https://hal9000dev-ai.github.io/rich-text-to-multi-format-link-converter/",
+      url: "https://shakeeb-sa.github.io/multi-format-link-converter/",
     },
     {
       id: "exploreCodingBtn",
@@ -126,3 +126,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
