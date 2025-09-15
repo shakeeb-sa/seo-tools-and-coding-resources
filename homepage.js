@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       id: "exploreCodingBtn",
-      url: "https://hal9000dev-ai.github.io/all-about-coding/",
+      url: "shakeeb-sa.github.io/all-about-coding/",
     },
   ];
   buttons.forEach(({ id, url }) => {
@@ -126,5 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
