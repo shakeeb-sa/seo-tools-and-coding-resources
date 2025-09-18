@@ -197,6 +197,7 @@ nav a:focus {
   ); /* secondary & accent colors */
   opacity: 0.1;
   z-index: 0;
+  pointer-events: none;
 }
 
 .hero h1 {
@@ -212,7 +213,7 @@ nav a:focus {
 
 .hero p {
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 1.6;
   max-width: 700px;
   margin-left: auto;
@@ -223,54 +224,6 @@ nav a:focus {
   animation-fill-mode: both;
 }
 
-/* Search bar */
-.search-container {
-  max-width: 600px;
-  margin: 2rem auto;
-  position: relative;
-  z-index: 1;
-  animation: fadeInUp 1s ease-out 0.4s;
-  animation-fill-mode: both;
-}
-
-.search-bar {
-  width: 100%;
-  padding: 1rem 3rem 1rem 1.5rem;
-  border-radius: 50px;
-  border: 2px solid #0a9396; /* accent-color */
-  background-color: #ffffff; /* card-bg */
-  color: #333; /* text-color */
-  font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.search-bar:focus {
-  outline: none;
-  border-color: #94d2bd; /* secondary-color */
-  box-shadow: 0 0 0 3px rgba(10, 147, 150, 0.2);
-}
-
-.search-btn {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #0a9396; /* accent-color */
-  color: #02343f; /* primary-color */
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.search-btn:hover {
-  background-color: #005f73; /* secondary-color */
-}
 
 /* Sections styling with enhanced appearance */
 section {
@@ -372,8 +325,8 @@ section h2::after {
 
 /* Buttons styling with enhanced appearance */
 .btn {
-  background-color: #0a9396; /* accent-color */
-  color: #02343f; /* primary-color */
+  background-color: #005f73; /* accent-color */
+  color: #f0edcc; /* primary-color */
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 50px;
@@ -387,9 +340,6 @@ section h2::after {
   min-width: 140px;
 }
 
-.btn i {
-  margin-left: 0.5rem;
-}
 
 .btn:hover {
   background-color: #005f73; /* secondary-color */
@@ -541,4 +491,51 @@ footer {
     left: 50%;
     transform: translateX(-50%);
   }
+}
+.tutorials-title {
+  font-size: clamp(1rem, 2.5vw, 3.5rem);
+  font-weight: 700;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: #02343f; /* primary-color */
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease-out;
+}
+.tutorials-descr {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease-out 0.2s;
+  animation-fill-mode: both;
+}
+/* Unique styles for the button */
+.custom-unique-button {
+  background-color: #005f73; /* accent-color */
+  color: #f0edcc; /* primary-color */
+  padding: 0.95rem 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+}
+
+.custom-unique-button:hover {
+  background-color: #02343f; /* Darker green on hover */
+transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
